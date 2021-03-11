@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/CLionProjects/ForensX/MyProcesses.h
+vector
+-
+
+/root/CLionProjects/ForensX/Processes.cpp
+filesystem
+-
+iostream
+-
+algorithm
+-
+iomanip
+-
+fstream
+-
+vector
+-
+MyProcesses.h
+/root/CLionProjects/ForensX/MyProcesses.h
+string
+-
+

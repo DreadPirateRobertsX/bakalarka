@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ForensX.dir/main.cpp.o CMakeFiles/ForensX.dir/Processes.cpp.o  -o ForensX 
