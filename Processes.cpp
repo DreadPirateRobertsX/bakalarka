@@ -48,7 +48,7 @@ void MyProcesses::printProcesses() {
         std::cout << std::setw(6) << process[0] << std::setw(13) << process[1] << std::setw(26) << process[2] << std::setw(13) << process[3]<< std::setw(35) << process[4] << std::setw(40) << process[5] <<"\n";
     }
 }
-
+//test
 void MyProcesses::loadProcData() {
     std::string path = "/proc";
     std::ifstream file;
