@@ -125,12 +125,19 @@ void MyProcesses::getNetworkConn() {
 
     fullPath = path + "/tcp";
     loadFileToVector(fullPath,matrix);
-    formatUdpTcpTable(matrix);
-    std::cout << "test";
+    formatUdpTcpTable(matrix,"TCP:");
+    m_networkConnections = matrix;
+    matrix.clear();
+
+    fullPath = path + "/udp";
+    loadFileToVector(fullPath,matrix);
+    formatUdpTcpTable(matrix, "UDP:");
+    for (int i = 0; i < matrix.size(); ++i) {
+        m_networkConnections.push_back(matrix[i]);
+    }
 }
 
-
-void MyProcesses::formatUdpTcpTable(std::vector<std::vector<std::string> >& matrix) {
+void MyProcesses::formatUdpTcpTable(std::vector<std::vector<std::string> >& matrix, std::string type) {  //nieco zle pre UDP
     std::string result;
     matrix.erase(matrix.begin());
     std::string tmp = "";
@@ -156,5 +163,6 @@ void MyProcesses::formatUdpTcpTable(std::vector<std::vector<std::string> >& matr
             matrix[j][k] = tmp;
             tmp = "";
         }
+        //matrix[j].insert(matrix[j].begin(), type);
     }
 }

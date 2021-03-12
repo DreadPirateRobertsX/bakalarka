@@ -20,7 +20,7 @@ public:
 
     void printProcesses();
 private:
-    void formatUdpTcpTable(std::vector<std::vector<std::string> >& matrix);
+    void formatUdpTcpTable(std::vector<std::vector<std::string> >& matrix, std::string type);
     void loadFileToVector(std::string fullPath,std::vector<std::vector<std::string> >& matrix);
     bool isNumber(std::string str);
     void loadProcData();
