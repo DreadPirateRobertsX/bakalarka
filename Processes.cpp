@@ -163,6 +163,6 @@ void MyProcesses::formatUdpTcpTable(std::vector<std::vector<std::string> >& matr
             matrix[j][k] = tmp;
             tmp = "";
         }
-        //matrix[j].insert(matrix[j].begin(), type);
+        matrix[j].insert(matrix[j].begin(), type);
     }
 }
