@@ -5,5 +5,6 @@ int main() {
 
     MyProcesses processes;
     processes.printProcesses();
+    processes.printConnections();
     return 0;
 }

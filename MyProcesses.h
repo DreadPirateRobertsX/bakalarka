@@ -19,6 +19,7 @@ public:
     }
 
     void printProcesses();
+    void printConnections();
 private:
     void formatUdpTcpTable(std::vector<std::vector<std::string> >& matrix, std::string type);
     void loadFileToVector(std::string fullPath,std::vector<std::vector<std::string> >& matrix);
